@@ -69,6 +69,5 @@ public class Exercício_1 {
         else{
             System.out.println("Valor " + valor_pagar +  " a pagar maior que "+conta+".");
         }
-
     }
 }
