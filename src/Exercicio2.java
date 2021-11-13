@@ -4,7 +4,6 @@ public class Exercicio2 {
     public static void main(String[] args) {
         int ano;
         Scanner input = new Scanner(System.in);
-        //bissextos múltiplos de 4 que não são múltiplos de 100
 
         int bissexto=0;
         System.out.print("Ano: ");
@@ -24,9 +23,9 @@ public class Exercicio2 {
         }
 
         if (bissexto==1 || bissexto==3){
-            System.out.println("Ano bissexto.");
+            System.out.println(ano+" ano bissexto.");
         }else {
-            System.out.println("Ano não bissexto.");
+            System.out.println(ano+" ano não bissexto.");
         }
 
     }
