@@ -29,7 +29,5 @@ public class Exercicio2 {
             System.out.println("Ano não bissexto.");
         }
 
-
-
     }
 }

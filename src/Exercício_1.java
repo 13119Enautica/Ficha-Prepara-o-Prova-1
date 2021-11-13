@@ -2,6 +2,16 @@ import java.util.*;
 
 public class Exercício_1 {
 
+    private int valor_pagar;
+
+    public Exercício_1(int valor_pagar){
+        this.valor_pagar = valor_pagar;
+    }
+
+    public int getvalor_pagar(){
+        return valor_pagar;
+    }
+
     public static void main(String[] args) {
 
         int nota5 = 5, nota10 = 10, nota20 = 20, moeda1 = 1, moeda2 = 2;
