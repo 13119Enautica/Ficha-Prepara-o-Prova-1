@@ -4,6 +4,5 @@ class Exercício_1Test {
 
     @org.junit.jupiter.api.Test
     void main() {
-        
     }
 }
