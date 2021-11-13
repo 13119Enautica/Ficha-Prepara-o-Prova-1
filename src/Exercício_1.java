@@ -3,6 +3,7 @@ import java.util.*;
 public class Exercício_1 {
 
     public static void main(String[] args) {
+
         int nota5 = 5, nota10 = 10, nota20 = 20, moeda1 = 1, moeda2 = 2;
         int notas5=0, notas10=0, notas20=0, moedas1=0, moedas2=0;
         int totalnotas=0, totalmoedas=0;
@@ -68,5 +69,6 @@ public class Exercício_1 {
         else{
             System.out.println("Valor " + valor_pagar +  " a pagar maior que "+conta+".");
         }
+
     }
 }
