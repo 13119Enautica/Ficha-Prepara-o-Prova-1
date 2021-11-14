@@ -41,7 +41,7 @@ public class Exercício_1 {
                     //System.out.println("1 moeda de 1$");
                 }
             }
-            System.out.println("");
+            System.out.println(" ");
             if (notas20 != 0) {
                 System.out.println(notas20 + " nota(s) de 20$");
             }
@@ -68,7 +68,7 @@ public class Exercício_1 {
             System.out.println("Logo não tem troco.");
         } else if(valor_pagar>conta){
             System.out.println("Valor " + valor_pagar +  " a pagar maior que "+conta+".");
-        }else if(valor_pagar<0){
+        }else if(valor_pagar<=0){
             System.out.println("Valor " + valor_pagar +  " é menor que 0.");
         }
 
