@@ -12,7 +12,7 @@ public class Exercício_1 {
 
         System.out.print("Valor a pagar: ");
         valor_pagar = input.nextInt();
-        if(valor_pagar<conta) {
+        if(valor_pagar<conta && valor_pagar>=0) {
             while (valor_pagar < conta) {
                 if (valor_pagar + nota20 <= conta) {
                     valor_pagar = valor_pagar + nota20;
@@ -65,9 +65,11 @@ public class Exercício_1 {
             }
         }else if(valor_pagar==conta){
             System.out.println("Valor "+ valor_pagar + " é igual "+conta+"." );
-        }
-        else{
+            System.out.println("Logo não tem troco.");
+        } else if(valor_pagar>conta){
             System.out.println("Valor " + valor_pagar +  " a pagar maior que "+conta+".");
+        }else if(valor_pagar<0){
+            System.out.println("Valor " + valor_pagar +  " é menor que 0.");
         }
 
     }
