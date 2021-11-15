@@ -15,7 +15,7 @@ public class Exercicio3 {
 
         System.out.print("Ano: ");
         ano = input.nextInt();
-        System.out.println("day:      "+ dia +"/"+ mes +"/"+ ano);
+        System.out.println("day:     "+ dia +"/"+ mes +"/"+ ano);
 
 
         if(dia<32 && mes<13){
@@ -61,6 +61,8 @@ public class Exercicio3 {
             }else if(mes==4 && dia==30 || mes==9 && dia==30 || mes==11 && dia==30){
                 dia=1;
                 mes=mes+1;
+            }else if(mes==4 || mes==9 || mes==11 ){
+                System.out.println("Dia nao existe");
             }
 
             System.out.println("next day: "+dia +"/"+ mes +"/"+ ano);
