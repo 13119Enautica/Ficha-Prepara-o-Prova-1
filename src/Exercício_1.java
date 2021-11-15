@@ -7,8 +7,25 @@ public class Exercício_1 {
         int nota5 = 5, nota10 = 10, nota20 = 20, moeda1 = 1, moeda2 = 2;
         int notas5=0, notas10=0, notas20=0, moedas1=0, moedas2=0;
         int totalnotas=0, totalmoedas=0;
-        int conta = 50, valor_pagar;
+        int conta, valor_pagar;
         Scanner input = new Scanner(System.in);
+
+        System.out.println("Conta 1 valor igual a 50");
+        System.out.println("Conta 2 valor igual a 100");
+        System.out.println("Conta 3 valor é dado por o utilizador");
+        System.out.print("Tipo de Conta: ");
+        conta = input.nextInt();
+
+        if(conta==1){
+            conta=50;
+        }
+        if(conta==2){
+            conta=100;
+        }
+        if(conta==3){
+            System.out.print("Valor da conta: ");
+            conta = input.nextInt();
+        }
 
         System.out.print("Valor a pagar: ");
         valor_pagar = input.nextInt();
@@ -71,6 +88,7 @@ public class Exercício_1 {
         }else if(valor_pagar<=0){
             System.out.println("Valor " + valor_pagar +  " é menor que 0.");
         }
+
 
     }
 }
