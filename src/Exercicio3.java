@@ -38,38 +38,34 @@ public class Exercicio3 {
                 dia=1;
                 mes=1;
                 ano=ano+1;
-            }
-
-            if (mes==2){
+            }else if (mes==2){
                 if(dia<28){
                     dia=dia+1;
                 }else if(dia == 28 && bissexto == 2) {
                         dia = dia + 1;
-                }else if (dia == 28 && bissexto == 1 || bissexto == 3) {
+                }else if (dia == 28 && bissexto == 2 ) {
                         dia = 1;
                         mes = mes + 1;
-                }
-                if (dia == 29 && bissexto == 2) {
+                }else if (dia == 29 && bissexto == 1 || bissexto == 3) {
                     dia = 1;
                     mes = mes + 1;
+                }else {
+                    System.out.println("Erro dia 29 nao existe");
                 }
-
-            }
-
-            if(mes==4 && dia<30 || mes==9 && dia<30 || mes==11 && dia<30){
+            }else if(mes==4 && dia<30 || mes==9 && dia<30 || mes==11 && dia<30){
                 dia=dia+1;
             }else if(mes==4 && dia==30 || mes==9 && dia==30 || mes==11 && dia==30){
                 dia=1;
                 mes=mes+1;
             }else if(mes==4 || mes==9 || mes==11 ){
-                System.out.println("Dia nao existe");
+                System.out.println("Mes "+mes+" tem 30 dias nao 31");
             }
 
             System.out.println("next day: "+dia +"/"+ mes +"/"+ ano);
         }else if(dia>31){
-            System.out.println("Dia errado");
+            System.out.println("Dia maior que 31");
         }else{
-            System.out.println("Mes errado");
+            System.out.println("Mes maior que 12");
         }
     }
 }
