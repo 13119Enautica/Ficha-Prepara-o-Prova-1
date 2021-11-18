@@ -44,14 +44,14 @@ public class Exercicio3 {
                 if(dia<28){
                     dia=dia+1;
                     System.out.println("next day: "+dia +"/"+ mes +"/"+ ano);
-                }else if(dia == 28 && bissexto == 1 || bissexto == 3) {
+                }else if(dia == 28 && bissexto == 1) {
                     dia = dia + 1;
                     System.out.println("next day: "+dia +"/"+ mes +"/"+ ano);
                 }else if (dia == 28) {
                     dia = 1;
                     mes = mes + 1;
                     System.out.println("next day: "+dia +"/"+ mes +"/"+ ano);
-                }else if (dia == 29 && bissexto == 1 || bissexto == 3) {
+                }else if (dia == 29 && bissexto == 1) {
                     dia = 1;
                     mes = mes + 1;
                     System.out.println("next day: "+dia +"/"+ mes +"/"+ ano);
