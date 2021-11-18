@@ -17,7 +17,6 @@ public class Exercicio3 {
         ano = input.nextInt();
         System.out.println("day:     "+ dia +"/"+ mes +"/"+ ano);
 
-
         if(dia<32 && mes<13){
             if (ano % 4 == 0) {
                 bissexto++;
@@ -41,9 +40,9 @@ public class Exercicio3 {
             }else if (mes==2){
                 if(dia<28){
                     dia=dia+1;
-                }else if(dia == 28 && bissexto == 2) {
+                }else if(dia == 28 && bissexto == 1 || bissexto == 3) {
                         dia = dia + 1;
-                }else if (dia == 28 && bissexto == 2 ) {
+                }else if (dia == 28) {
                         dia = 1;
                         mes = mes + 1;
                 }else if (dia == 29 && bissexto == 1 || bissexto == 3) {
