@@ -3,12 +3,8 @@ import java.util.*;
 public class Exercicio4 {
     public static void main(String[] args) {
         int n=1, x=1, r;
-        Scanner input = new Scanner(System.in);
 
-
-        System.out.println("Test");
-        //System.out.print("N?");
-        //x = input.nextInt();
+        System.out.println("Tabuada");
 
         while (x!=11){
             while(n!=11){

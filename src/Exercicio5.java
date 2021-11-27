@@ -1,22 +1,48 @@
 import java.util.*;
 
+class Retrangulo {
+    private int altura;
+    private int lado;
+
+    public int getAltura() {
+        return altura;
+    }
+    public int getLado(){
+        return lado;
+    }
+
+}
+class Quadrado {
+    private int lado;
+    public int getLado() {
+        return lado;
+    }
+
+}
+
+class Area<area> extends Quadrado{
+    double area = 0.0;
+    //area = (retrangulo.getAltura() * retrangulo.getLargura());
+    //return area;
+}
+
 public class Exercicio5 {
+
     public static void main(String[] args) {
+        int a,l;
         Scanner input = new Scanner(System.in);
-        int a;
+        Retrangulo retrangulo = new Retrangulo();
+        Quadrado quadrado = new Quadrado();
 
-        System.out.print("a:");
-        a = input.nextInt();
+        System.out.print("lado:");
+        l = input.nextInt();
+        //retrangulo.getLado()=l;
+        //quadrado.getLado()=l;
+        System.out.print("altura: ");
+        a =input.nextInt();
+        //retrangulo.getAltura()=a;
 
-        if(a>0){
-            System.out.println("maior que 0");
-            if(a<100){
-                System.out.println("menor que 100");
-            }else if(a<500){
-                System.out.println("menor que 500");
-            }
-        }else{
-            System.out.println("menor que 0");
-        }
+        System.out.println(quadrado.getLado());
+        System.out.println(retrangulo.getAltura());
     }
 }

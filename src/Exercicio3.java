@@ -15,9 +15,10 @@ public class Exercicio3 {
 
         System.out.print("Ano: ");
         ano = input.nextInt();
+
         System.out.println("day:      "+ dia +"/"+ mes +"/"+ ano);
 
-        if(dia<32 && mes<13){
+        if(dia<=31 && mes<=12){
             if (ano % 4 == 0) {
                 bissexto++;
             }
@@ -69,11 +70,10 @@ public class Exercicio3 {
                 System.out.println("Mes "+mes+" tem 30 dias nao 31");
             }
 
-
-        }else if(dia>31){
-            System.out.println("Dia maior que 31");
-        }else{
-            System.out.println("Mes maior que 12");
+        }if(dia>31 || dia<=0){
+            System.out.println("Dia maior/menor que 31. dia: "+dia);
+        }if(mes>12 || dia<=0){
+            System.out.println("Mes maior/menor que 12. mes: "+mes);
         }
     }
 }
