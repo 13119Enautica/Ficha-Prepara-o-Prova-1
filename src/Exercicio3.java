@@ -16,6 +16,7 @@ public class Exercicio3 {
         System.out.print("Ano: ");
         ano = input.nextInt();
 
+        System.out.println(" ");
         System.out.println("day:      "+ dia +"/"+ mes +"/"+ ano);
 
         if(dia<=31 && mes<=12){

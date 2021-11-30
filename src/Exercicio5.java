@@ -42,7 +42,7 @@ public class Exercicio5 {
         a =input.nextInt();
         //retrangulo.getAltura()=a;
 
-        System.out.println(quadrado.getLado());
-        System.out.println(retrangulo.getAltura());
+        //System.out.println(quadrado.getLado());
+        //System.out.println(retrangulo.getAltura());
     }
 }
