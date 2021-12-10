@@ -3,7 +3,7 @@ import java.util.*;
 public class Exercicio6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double n, money=50;
+        double n, money=50f;
         int nota20=0, nota10=0, nota5=0;
         int moeda2=0, moeda1=0, moeda50=0, moeda20=0,moeda10=0, moeda05=0, moeda01=0;
 
@@ -33,24 +33,24 @@ public class Exercicio6 {
                     n=n+1;
                     moeda1++;
                 }
-                if(n+0.50<money || n+0.50==money){
-                    n=n+0.50;
+                if(n+0.50f<money || n+0.50f==money){
+                    n=n+0.50f;
                     moeda50++;
                 }
-                if(n+0.20<money || n+0.20==money){
-                    n=n+0.20;
+                if(n+0.20f<money || n+0.20f==money){
+                    n=n+0.20f;
                     moeda20++;
                 }
-                if(n+0.10<money || n+0.10==money){
-                    n=n+0.10;
+                if(n+0.10f<money || n+0.10f==money){
+                    n=n+0.10f;
                     moeda10++;
                 }
-                if(n+0.05<money || n+0.05==money){
-                    n=n+0.05;
+                if(n+0.05f<money || n+0.05f==money){
+                    n=n+0.05f;
                     moeda05++;
                 }
-                if(n+0.01<money || n+0.01==money){
-                    n=n+0.01;
+                if(n+0.01f<money || n+0.01f==money){
+                    n=n+0.01f;
                     moeda01++;
                 }
             }
