@@ -62,8 +62,4 @@ public class projeto {
     public void setBytes(String bytes){
         this.bytes=bytes;
     }
-
-    public String toString(){
-        return getDescricao();
-    }
 }
