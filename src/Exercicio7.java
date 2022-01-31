@@ -9,7 +9,5 @@ public class Exercicio7 {
             i ++;
         }
 
-
-
     }
 }
